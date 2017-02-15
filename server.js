@@ -17,7 +17,7 @@ var content={
           </p>` 
 };
 
-function CreateTemplate(data){
+function createTemplate(data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
@@ -55,7 +55,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-     res.send(CreateTemplate(articleOne));
+     res.send(createTemplate(ArticleOne));
 
 });
 
